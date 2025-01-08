@@ -66,9 +66,9 @@ val roomVersion = "2.6.1"
 plugins {
     id("net.researchgate.release") version "3.0.2"
     id("com.android.application") version "8.5.1"
-    kotlin("android").version("1.8.20")
-    kotlin("kapt").version("1.8.20")
-    kotlin("plugin.serialization") version "1.8.20"
+    kotlin("android").version("1.9.25")
+    kotlin("kapt").version("1.9.25")
+    kotlin("plugin.serialization") version "1.9.25"
 }
 
 repositories {
@@ -144,7 +144,7 @@ dependencies {
     implementation(group = "androidx.fragment", name = "fragment-ktx", version = "1.7.1")
 
     implementation(group = "commons-net", name = "commons-net", version = "3.10.0")
-    implementation(group = "commons-codec", name = "commons-codec", version = "20041127.091804")
+    implementation(group = "commons-codec", name = "commons-codec", version = "1.3")
     implementation(group = "org.apache.commons", name = "commons-lang3", version = "3.14.0")
 
 

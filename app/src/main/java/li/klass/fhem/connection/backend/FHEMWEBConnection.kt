@@ -118,7 +118,7 @@ class FHEMWEBConnection(fhemServerSpec: FHEMServerSpec, applicationProperties: A
             return RequestResult.Success(BufferedInputStream(response.content) as InputStream)
         } catch (e: HttpResponseException) {
             val errorResult = handleHttpStatusCode(e.statusCode)
-            val msg = "found error " + (errorResult?.error?.declaringClass?.simpleName
+            val msg = "found error " + (errorResult?.error?.declaringJavaClass?.simpleName
                     ?: "unknown") + " for " +
                     "status code " + e.statusCode
             LOG.debug(msg)
